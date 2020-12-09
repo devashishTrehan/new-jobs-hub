@@ -1,0 +1,562 @@
+.border-shadow {
+    transition: .5s;
+    box-shadow: var(--TBoxShadow);
+    margin-bottom: 25px;
+    display: flex;
+    padding: 30px 15px 30px 30px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.banner-section {
+    width: 100%;
+    z-index: 1;
+}
+
+.user-img {
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    padding: 3px;
+}
+
+.user-img label img {
+    width: 100%;
+    height: 100%;
+}
+
+.user-img label {
+    margin-bottom: 0px;
+}
+
+.user-img img {
+    border-radius: 50%;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.user-img label:hover {
+    cursor: pointer;
+}
+
+.user-img .user-img-chng svg {
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.user-img:hover .user-img-chng {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.user-info form input,
+.user-img form input {
+    display: none;
+}
+
+.user-img .user-img-chng {
+    position: absolute;
+    background: #10101042;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    color: #e0e0e0;
+    border-radius: 75px;
+    display: none;
+    transition: all 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.user-img .user-img-chng span {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.imageModal .imageWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left-sec {
+    width: calc(100% - 40px);
+    float: left;
+}
+
+.right-sec {
+    width: 40px;
+    text-align: right;
+    flex-direction: column;
+}
+
+.right-sec button {
+    background-color: #fff;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin: 0 5px 8px 0;
+    min-width: 30px;
+    min-height: 25px;
+}
+
+.right-sec button svg {
+    font-size: 14px;
+}
+
+.right-sec a {
+    padding: 5px;
+    font-weight: normal;
+    display: block;
+}
+
+.right-sec span {
+    color: var(--TPrimary);
+    font-size: 16px;
+}
+
+.left-sec h5 {
+    color: var(--TDark);
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    display: flex;
+}
+
+.left-sec p {
+    color: var(--TDark);
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+    margin-bottom: 0px;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.left-sec .helperText {
+    color: gray;
+}
+
+#form-dialog-title {
+    text-transform: capitalize;
+}
+
+.textarea {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid var(--TGray);
+    border-radius: 5px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-list-item {
+    background-color: #f4f5fa;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.section-list-item ul {
+    list-style: none;
+    margin: 0;
+}
+
+.section-list-item ul li {
+    text-align: left
+}
+
+.section-list-item ul li span:first-child {
+    color: var(--TGray);
+}
+
+.section-list-item ul li span:second-child {
+    color: var(--TDark);
+}
+
+
+/* profile-del-add start here */
+
+.attach-resume-sec {
+    display: block;
+    padding: 15px 30px
+}
+
+.attach-resume-sec h3 {
+    color: var(--TDark);
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.attach-resume-sec p {
+    color: var(--TDark);
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+}
+
+.attach-resume-sec form {
+    border: 1px dashed var(--TLightDark);
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.attach-resume-sec form input {
+    display: none;
+}
+
+.attach-resume-sec form label {
+    background: var(--TPrimaryTransparent);
+    color: var(--TPrimary);
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.attach-resume-sec form p {
+    color: var(--TDark);
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 0px;
+    padding-top: 5px;
+}
+
+.attach-resume-sec .partison-sec {
+    color: var(--TGray);
+    padding: 15px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin: 10px auto 5px;
+    width: 50%;
+}
+
+.attach-resume-sec .partison-sec span {
+    position: absolute;
+}
+
+.attach-resume-sec .partison-sec span:first-child {
+    width: 100%;
+    height: 2px;
+    background: var(--TGray);
+    left: 0%;
+}
+
+.attach-resume-sec .partison-sec span:last-child {
+    width: 50px;
+    height: 20px;
+    background: #fff;
+    top: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    left: calc(50% - 25px);
+}
+
+.resume-info-container {
+    padding: 10px 0;
+}
+
+.resume-info-container-uploaded {
+    border-bottom: 1px solid var(--TLightDark);
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.resume-info-container p {
+    text-align: center;
+}
+
+.attach-resume-sec p.resume-des {
+    color: var(--TDark);
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.focused-section {
+    box-shadow: none;
+    border: 1px solid var(--TPrimary);
+}
+
+
+/* attach-resume-sec end here */
+
+
+/* user-details section start here */
+
+.user-detail-wrap {
+    margin-top: 10px;
+}
+
+.user-detail-inner {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.UserMenuIcon {
+    background-color: #fff;
+    padding: 5px 8px;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    min-width: 30px;
+    min-height: 25px;
+}
+
+.UserMenuIcon svg {
+    font-size: 16px;
+}
+
+.user-detail-inner .user-info-wrap {
+    padding: 0px 5px;
+}
+
+.personal-detail-edit-button {
+    font-size: 20px;
+    padding: 8px;
+}
+
+.user-details a {
+    color: var(--TPrimary);
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+.user-details ul {
+    display: inline-block;
+    list-style: none;
+    display: none;
+}
+
+.user-details ul li {
+    list-style: none;
+}
+
+.user-details ul li a {
+    background: #ee294f;
+    padding: 5px 15px;
+    vertical-align: middle;
+    color: #fff!important;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.user-details ul li a i {
+    vertical-align: middle;
+}
+
+.user-details .btn:focus {
+    box-shadow: none;
+}
+
+.user-details .com-info {
+    text-align: center !important;
+}
+
+.user-details .com-info svg {
+    color: var(--TPrimary);
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.user-details .user-headline {
+    color: #555 !important;
+}
+
+.user-details .com-add {
+    display: inline;
+    font-size: 14px;
+}
+
+.user-details .com-info h1 {
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 22px;
+    line-height: 35px;
+    color: var(--TDark);
+}
+
+.user-details .com-info p {
+    color: #555;
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.user-details .com-info h2 {
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--TDark);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.user-details .com-info h2 a {
+    font-weight: normal;
+    color: var(--TPrimary);
+    font-size: 22px;
+    text-decoration: none;
+    padding: 0px 5px;
+}
+
+.user-details .com-name {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.user-details .com-name img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.user-details .com-name span {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.field {
+    font-weight: 600;
+}
+
+
+/* .value{} */
+
+.collapseDetail {
+    padding: 0 10px;
+}
+
+.collapseDetail .collapseDetailItem {
+    flex-grow: 1;
+}
+
+.collapseDetail .collapseDetailItem div {
+    display: flex;
+    flex-direction: row;
+}
+
+.collapseDetail .collapseDetailItem div * {
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+    color: #666;
+    width: 50%;
+}
+
+.collapseDetail .collapseDetailItem div label {
+    font-weight: 600;
+    margin-right: 10px;
+    color: #555;
+}
+
+
+/* user-details section end here */
+
+@media(max-width: 991px) {
+    .profile-strength .profile-cmplt h4 {
+        font-size: 16px;
+    }
+    .user-img {
+        width: 140px;
+        height: 140px
+    }
+    .user-details .com-info p {
+        padding-left: 0px;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 4px 0px;
+    }
+    .user-details .com-name {
+        padding-top: 10px;
+        display: inline-block;
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+}
+
+@media(max-width: 767px) {
+    .border-shadow {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .user-img {
+        width: 140px;
+        height: 140px;
+        margin-top: -65px;
+    }
+    .collapseDetail {
+        padding: 10px 20px;
+    }
+    .user-detail-inner .user-info-wrap {
+        padding: 0px 5px;
+    }
+    /* .user-details{margin-bottom: 35px;} */
+}
+
+@media(max-width: 576px) {
+    .collapseDetail {
+        padding: 10px 20px;
+    }
+    .border-shadow {
+        margin-bottom: 15px;
+    }
+    .user-detail-inner .user-info-wrap {
+        padding: 0px 5px;
+    }
+    .user-details .com-info h1 {
+        font-size: 19px;
+        padding-bottom: 0px;
+        line-height: 28px;
+    }
+    .user-details .com-info h2 {
+        font-size: 18px;
+        padding-bottom: 0px;
+        margin-top: 5px;
+    }
+    .user-details .com-info h2 a {
+        font-size: 16px
+    }
+    .user-details .com-info p {
+        font-size: 16px;
+        padding: 0px;
+    }
+    .user-details .dropdown-toggle {
+        padding: 3px 15px!important;
+    }
+    .user-details .col-md-12.pt-3 {
+        padding-top: 5px!important;
+    }
+    .profile-strength .profile-del-add .left-sec {
+        padding-right: 10px;
+    }
+    .profile-strength .container .col-md-4.pb-5 {
+        padding-bottom: 35px!important;
+    }
+}

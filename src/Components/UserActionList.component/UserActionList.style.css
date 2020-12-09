@@ -1,0 +1,27 @@
+.user-action-list {
+    padding: 10px;
+}
+
+.user-action-list>div {
+    padding: unset 6px;
+}
+
+.user-action-list .icon {
+    min-width: unset;
+    margin-right: 10px;
+    width: 20px
+}
+
+.user-action-list .text>span {
+    font-size: 14px;
+}
+
+@media(max-width: 767px) {
+    .user-action-list .icon {
+        margin-right: 5px;
+    }
+    .user-action-list>div {
+        padding: 0 unset;
+    }
+    /* .user-details{margin-bottom: 35px;} */
+}

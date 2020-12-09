@@ -1,0 +1,79 @@
+  /* about section start here */
+  .about-module {padding: 30px 0px 35px;font-family: 'Open Sans', 'sans-serif', Arial, Helvetica, sans-serif;}
+  .about-banner{background-image:url('/assets/bg-images/about-banner.jpg');background-size:100% 100%;background-repeat:no-repeat;
+  height: 300px;}
+  .about-module .about-top h1{padding:20px 0px 10px;color:var(--TText1);font-size:30px;font-weight:700;text-align:center;}
+  .about-module .about-top h1 span{color: var(--TPrimary);}
+  .about-module .about-top p {text-align: center;width: 80%;margin: 0 auto;font-size: 17px;}
+  .about-module .abt-inner {margin-top: 50px;}
+  .about-module .about-sec h2,.about-module .about-sec .counter {text-align: center;color: #ee2b4e;line-height: 1em;font-size: 40px;font-weight: 700;}
+  .about-module .about-sec h2 span {font-size: 18px;color: #000;}
+  .about-module .about-sec p.abtp {text-align: center;padding-top: 0px;font-size: 14px;}
+    /* about section end here */
+  
+    /* services section start here */
+  .services-sec {background: #2b3247;color: #fff;padding: 50px 0;position: relative;}
+  .services-sec .container{width: 100%;max-width: 1170px;}
+  .s-section {padding-bottom: 150px;background-position: 50% 100%;}
+  .service-bg-sec {background-image: url('/assets/bg-images/abt-service.png');background-repeat: no-repeat;background-size: auto;}
+  .services-sec h2{text-align: center; margin-bottom: 4%; position: relative; line-height: 1.5; font-size:24px; font-weight: 500;
+      color: #fff; width: 40%; display: block; margin: 0 auto 80px;}
+  .services-sec h2:after {position: absolute; content: ''; width: 120px; height: 3px; background-color: #fff; bottom: -10px;
+      left: 40%;}
+  
+  .services-sec .s-ser-sec {margin-bottom: 2rem; margin-left: 0%; margin-right: 0; display: flex; align-items: center;
+      justify-content: center; padding-right: 0%; padding-left: 19%; }
+  .services-sec .s-ser-sec:nth-child(2n-1) {margin-left: 0; margin-right: 0%; padding-right: 19%; padding-left: 0px;}
+  
+  .services-sec figure {padding: 0;}
+  .services-sec .s-ser-img {height: 40px; width: 40px; text-align: center; flex: 1 0 auto; align-self: flex-start; margin-right: 10px;
+      border: 1px solid #fff; margin-top: 20px;}
+  .services-sec .s-ser-sec:nth-child(2n-1) .s-ser-img {-webkit-box-ordinal-group: 3; order: 2; margin: 0 0 0 1rem;
+      margin-left: 10px; border: 1px solid #fff; margin-top: 20px; }
+  .services-sec .s-ser-img img {width: 30px; height: 30px; display: block; margin: 4px auto; max-width: 100%;vertical-align: middle;border: 0;}
+  .services-sec .s-ser-sec .s-ser-text {align-self: flex-start;}
+  .services-sec .s-ser-sec:nth-child(2n-1) .s-ser-text {text-align: right;}
+  .services-sec .s-ser-text h3 {margin-top: 0; font-weight: 500; line-height: 24px; display: block; margin-bottom: 0.5rem;
+      color: #111; letter-spacing: -0.8px; font-size: 20px; color: #fff; }
+  .services-sec .s-ser-sec .s-ser-text p {display: block; margin-bottom: 0; font-size: 16px; line-height: 24px;
+      letter-spacing: -0.2px; color: inherit; }
+  
+  .com-brand{padding:30px 0px;background-color: #e8e8e8;}
+  .com-brand .com-content{margin-bottom: 20px;}
+  .com-brand h3{text-align:center;color:#031d29;line-height:1em;font-size:30px;font-weight:700;padding:20px 0px;}
+  .com-brand p{text-align:center;font-size:17px;}
+  .com-brand .c-brand{margin:20px auto;}
+  .com-brand .c-brand img{display:block;margin:0px auto;}
+  
+  @media(max-width: 767px){
+  .about-banner{height:180px;}
+  .about-module .about-top p{width: 100%;text-align: justify;}
+  .about-module .about-sec{margin-bottom: 20px;}
+  .about-module .about-sec:last-child{margin-bottom: 0px;}
+  /*.about-sec{margin:20px 0px;}*/
+  
+  .ser-img{margin-bottom:30px;}
+  .service-bg-sec{background-image: none;padding-bottom: 50px;margin:0px;padding:50px 0px 20px;}
+  .service-bg-sec .s-ser-sec{margin-bottom: 30px;}
+  .services-sec .s-ser-sec{padding-left: 4%;text-align: justify;}
+  .services-sec .s-ser-sec:nth-child(2n-1){padding-right: 4%;text-align: justify;}
+  .services-sec .s-ser-sec:nth-child(2n-1) .s-ser-text p{padding-left:20px;text-align: justify;padding-right: 0px;}
+  .services-sec .s-ser-sec:nth-child(2n-1) .s-ser-img {margin-left: 15px;}
+  .services-sec h2{width: 100%;margin-bottom: 60px;}
+  .services-sec .s-ser-text h3{padding-left: 5px;text-transform: uppercase;}
+  .services-sec .s-ser-sec .s-ser-text p{padding-right:15px;text-align: justify;padding-left: 5px;font-style: italic;}
+  }
+  
+  @media(max-width:576px){
+  .about-module .about-top h1{font-size: 26px;}
+  .services-sec h2 {line-height: 30px;font-size: 22px;}
+  .com-brand h3 {font-size: 26px}
+  .com-brand p{text-align: justify;}
+  }
+  
+  @media(max-width:480px){
+  .banner{height:200px;}
+  .about-sec{width:100%;}
+  .services-sec h2:after{left: 35%;}
+  .c-brand{width:100%;}
+  }
